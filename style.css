@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;   
+}
+
+header {
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.Gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* space between the image */
+    flex-wrap: wrap; /* ensure images wrap on smaller screens */
+}
+
+.Gallery img{
+    max-width: 100%;
+    height: auto;
+    flex: 1 1 auto; /* allow images to grow and shrink */
+    max-width: 45%; /* adjust the maximum width as needed */
+}
+
+/* hide the flower image container by default */
+.hidden {
+    display: none;
+}
+
+/* show the flower image container when needed */
+.visible {
+    display: block;
+    margin-top: 20px;
+}
